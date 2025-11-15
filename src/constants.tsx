@@ -1,4 +1,3 @@
-import React from 'react';
 import { Blog, BlogCategory, Skill } from './types';
 
 export const SKILLS: Skill[] = [
