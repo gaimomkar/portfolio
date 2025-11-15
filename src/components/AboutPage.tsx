@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-24">
           <div className="flex-shrink-0 w-full max-w-sm mx-auto lg:mx-0 lg:w-1/3">
             <img 
-              src="https://picsum.photos/seed/omkar-portrait/400/500" 
+              src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219587/omkar_potrait_nobg-scaled_vbbpzb.png" 
               alt="Kumar Omkar Portrait"
               className="rounded-lg shadow-2xl object-cover w-full h-full"
             />
@@ -101,7 +101,7 @@ const AboutPage: React.FC = () => {
         {/* Work Experience Section */}
         <div className="text-center mb-16">
             <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Work Experience</h3>
-            <img src="https://kumaromkar.in/wp-content/uploads/2025/07/WorkExp_Timeline_Red-1024x599.png" alt="Work Experience Timeline" className="w-full h-auto rounded-lg object-cover" />
+            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219587/WorkExp_Timeline_Red_pvkwwj.png://kumaromkar.in/wp-content/uploads/2025/07/WorkExp_Timeline_Red-1024x599.png" alt="Work Experience Timeline" className="w-full h-auto rounded-lg object-cover" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
@@ -130,13 +130,13 @@ const AboutPage: React.FC = () => {
          {/* Education Section */}
         <div className="text-center mb-24">
             <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Education</h3>
-            <img src="https://kumaromkar.in/wp-content/uploads/2025/07/Education_Red-1024x407.png" alt="Education Timeline" className="w-full h-auto rounded-lg object-cover" />
+            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219579/Education_Red-scaled_lptwns.png" alt="Education Timeline" className="w-full h-auto rounded-lg object-cover" />
         </div>
 
         {/* Certifications Section */}
         <div className="text-center">
             <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Certifications</h3>
-            <img src="https://kumaromkar.in/wp-content/uploads/2025/06/certification_red-1024x575.png" alt="Certifications" className="w-full h-auto rounded-lg object-cover" />
+            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/certification_red_t042yv.png" alt="Certifications" className="w-full h-auto rounded-lg object-cover" />
         </div>
 
 

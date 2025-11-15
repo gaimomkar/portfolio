@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="https://picsum.photos/seed/omkar/500/500" 
+                src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219587/omkar_potrait_nobg-scaled_vbbpzb.png" 
                 alt="Kumar Omkar" 
                 className="rounded-full shadow-2xl w-80 h-80 md:w-96 md:h-96 object-cover"
               />
@@ -58,28 +58,28 @@ const HomePage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ExploreCard
-              imageSrc="https://picsum.photos/seed/about/500/300"
+              imageSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/aboutme_cazxrl.svg"
               title="Want to learn more about me and my experience?"
               text="Discover my journey, professional background, and projects."
               buttonText="About"
               linkTo="/about"
             />
             <ExploreCard
-              imageSrc="https://picsum.photos/seed/blog/500/300"
+              imageSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/blogpost_qqt3y7.svg"
               title="Curious about what I write?"
               text="Dive into my blog where I share insights on Tech, Product, Management, Strategy, and General Gyan."
               buttonText="Blog"
               linkTo="/blog"
             />
             <ExploreCard
-              imageSrc="https://picsum.photos/seed/contact/500/300"
+              imageSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219579/contactme_xdgknk.svg"
               title="Interested in the work that I do?"
               text="Let’s connect and explore how we can collaborate."
               buttonText="Contact"
               linkTo="/contact"
             />
             <ExploreCard
-              imageSrc="https://picsum.photos/seed/appoint/500/300"
+              imageSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/appointment_cwigrt.svg"
               title="Looking for guidance and mentorship?"
               text="Book a session with me for personalized advice and mentorship."
               buttonText="Appointment"

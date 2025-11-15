@@ -29,17 +29,17 @@ const AppointmentPage: React.FC = () => {
         <section className="bg-theme-bg-white rounded-xl shadow-lg border border-theme-border p-8 md:p-12 mb-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
                 <InfoCard 
-                    imgSrc="https://kumaromkar.in/wp-content/uploads/2021/02/computer-1.png"
+                    imgSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219582/computer-1_ejuudl.png"
                     title="Quick Consults"
                     text="Fast, focused answers to your questions about tech careers, program management, or industry trends."
                 />
                 <InfoCard 
-                    imgSrc="https://kumaromkar.in/wp-content/uploads/2021/02/ads-1.png"
+                    imgSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219577/ads-1_z5rr6c.png"
                     title="Career Guidance"
                     text="Personalized feedback on your resume and actionable advice to elevate your career trajectory."
                 />
                 <InfoCard 
-                    imgSrc="https://kumaromkar.in/wp-content/uploads/2021/02/settings-1.png"
+                    imgSrc="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219586/settings-1_vlqjrt.png"
                     title="Mentorship"
                     text="Realistic interview simulations and deep-dive mentorship sessions tailored to your goals."
                 />

@@ -124,7 +124,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <NavLink to="/">
-              <img className="h-10 w-auto" src="https://kumaromkar.in/wp-content/uploads/2025/06/logo_ko_svg2.svg" alt="Kumar Omkar Logo" />
+              <img className="h-10 w-auto" src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219584/logo_ko_svg_ulp0nm.svg" alt="Kumar Omkar Logo" />
             </NavLink>
           </div>
 
