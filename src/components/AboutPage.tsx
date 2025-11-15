@@ -6,12 +6,12 @@ import { Skill } from '../types';
 const SkillBar: React.FC<{ skill: Skill }> = ({ skill }) => (
   <div className="mb-4">
     <div className="flex justify-between mb-1">
-      <span className="text-base font-medium text-slate-700">{skill.name}</span>
-      <span className="text-sm font-medium text-sky-700">{skill.percentage}%</span>
+      <span className="text-base font-medium text-theme-text-main">{skill.name}</span>
+      <span className="text-sm font-medium text-theme-secondary">{skill.percentage}%</span>
     </div>
-    <div className="w-full bg-slate-200 rounded-full h-2.5">
+    <div className="w-full bg-theme-bg-subtle rounded-full h-2.5">
       <div 
-        className="bg-sky-600 h-2.5 rounded-full" 
+        className="bg-theme-primary h-2.5 rounded-full" 
         style={{ width: `${skill.percentage}%` }}
       ></div>
     </div>
@@ -25,12 +25,12 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, description }) => (
-    <div className="bg-white rounded-lg shadow-md p-6 border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-        <p className="font-bold text-slate-600">{title}</p>
-        <h4 className="text-xl font-bold text-slate-900 mb-2">{company}</h4>
-        <p className="text-slate-600 text-sm mb-4">{description}</p>
-        <div className="border-t border-slate-200 pt-4 mt-4">
-            <Link to="/blog" className="text-sky-600 font-semibold text-sm hover:text-sky-800 transition-colors">
+    <div className="bg-theme-bg-white rounded-lg shadow-md p-6 border border-theme-border hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <p className="font-bold text-theme-text-main">{title}</p>
+        <h4 className="text-xl font-bold text-theme-secondary font-heading mb-2">{company}</h4>
+        <p className="text-theme-text-main text-sm mb-4">{description}</p>
+        <div className="border-t border-theme-border pt-4 mt-4">
+            <Link to="/blog" className="text-theme-secondary font-semibold text-sm hover:text-theme-primary transition-colors">
                 Projects & Learnings &rarr;
             </Link>
         </div>
@@ -40,11 +40,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, descrip
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="bg-slate-50 min-h-full animate-fadeIn">
+    <div className="bg-theme-bg-main min-h-full animate-fadeIn">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold text-theme-secondary font-heading sm:text-5xl">
             About Me
           </h1>
         </div>
@@ -59,36 +59,34 @@ const AboutPage: React.FC = () => {
             />
           </div>
           <div className="flex-grow text-center lg:text-left">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">
+            <h2 className="text-3xl font-bold text-theme-secondary font-heading mb-4">
               Turning Ideas into Impact—One Program at a Time
             </h2>
-            <p className="text-slate-600 leading-relaxed mb-6">
+            <p className="text-theme-text-main leading-relaxed mb-6">
               From designing aircraft systems to re-architecting login flows at LinkedIn, my journey has been anything but linear—and I wouldn’t have it any other way. I’m Omkar, a Technical Program Manager who thrives at the intersection of engineering, product, and people. Whether it’s building dashboards that drive decisions or leading migrations that scale platforms, I bring curiosity, clarity, and a collaborative spirit to every project. And when I’m not in the thick of a roadmap, I’m probably chasing mountain trails or mentoring the next wave of builders.
             </p>
-            <div className="flex justify-center lg:justify-start space-x-5 text-slate-500">
-               <a href="https://www.linkedin.com/in/omkarbd01/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600 transition-colors duration-300">{SocialIcons.linkedin}</a>
-               <a href="https://x.com/omkarbd01" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600 transition-colors duration-300">{SocialIcons.twitter}</a>
-               <a href="https://www.instagram.com/omkarbd01/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600 transition-colors duration-300">{SocialIcons.instagram}</a>
-               <a href="https://www.youtube.com/@omkarbd01" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600 transition-colors duration-300">{SocialIcons.youtube}</a>
-               <a href="mailto:omkarbd01@gmail.com" className="hover:text-sky-600 transition-colors duration-300">{SocialIcons.mail}</a>
+            <div className="flex justify-center lg:justify-start space-x-5 text-theme-secondary">
+               <a href="https://www.linkedin.com/in/omkarbd01/" target="_blank" rel="noopener noreferrer" className="hover:text-theme-primary transition-colors duration-300">{SocialIcons.linkedin}</a>
+               <a href="https://x.com/omkarbd01" target="_blank" rel="noopener noreferrer" className="hover:text-theme-primary transition-colors duration-300">{SocialIcons.twitter}</a>
+               <a href="https://www.instagram.com/omkarbd01/" target="_blank" rel="noopener noreferrer" className="hover:text-theme-primary transition-colors duration-300">{SocialIcons.instagram}</a>
             </div>
           </div>
         </div>
 
         {/* Skills Section */}
-        <div className="bg-white rounded-xl shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-8 p-8 md:p-12 mb-24 border border-slate-200">
+        <div className="bg-theme-bg-white rounded-xl shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-8 p-8 md:p-12 mb-24 border border-theme-border">
           <div className="lg:self-center">
-            <h3 className="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+            <h3 className="text-2xl font-extrabold text-theme-secondary font-heading sm:text-3xl">
               Program Manager
             </h3>
-            <p className="mt-4 text-base leading-relaxed text-slate-600">
+            <p className="mt-4 text-base leading-relaxed text-theme-text-main">
                At LinkedIn, I lead high-impact technical programs focused on platform safety, data infrastructure, and service modernization. My work spans coordinating cross-functional teams, driving OKRs, and delivering scalable solutions that improve performance, security, and user experience. I specialize in aligning engineering and data science efforts, managing complex migrations, and building tools that streamline operations and decision-making.
             </p>
             <a
               href="https://kumaromkar.in/wp-content/uploads/2025/06/kumaromkar_resume_program.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 bg-sky-600 border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-white hover:bg-sky-700 transition-colors"
+              className="mt-8 bg-theme-primary border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-white hover:bg-theme-primary-hover transition-colors"
             >
               Download CV
             </a>
@@ -102,8 +100,8 @@ const AboutPage: React.FC = () => {
         
         {/* Work Experience Section */}
         <div className="text-center mb-16">
-            <h3 className="text-3xl font-extrabold text-slate-900 mb-6">Work Experience</h3>
-            <img src="https://picsum.photos/seed/work-timeline/1200/400" alt="Work Experience Timeline" className="w-full h-auto rounded-lg shadow-lg object-cover" />
+            <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Work Experience</h3>
+            <img src="https://kumaromkar.in/wp-content/uploads/2025/07/WorkExp_Timeline_Red-1024x599.png" alt="Work Experience Timeline" className="w-full h-auto rounded-lg object-cover" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
@@ -131,14 +129,14 @@ const AboutPage: React.FC = () => {
 
          {/* Education Section */}
         <div className="text-center mb-24">
-            <h3 className="text-3xl font-extrabold text-slate-900 mb-6">Education</h3>
-            <img src="https://picsum.photos/seed/education-timeline/1200/350" alt="Education Timeline" className="w-full h-auto rounded-lg shadow-lg object-cover" />
+            <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Education</h3>
+            <img src="https://kumaromkar.in/wp-content/uploads/2025/07/Education_Red-1024x407.png" alt="Education Timeline" className="w-full h-auto rounded-lg object-cover" />
         </div>
 
         {/* Certifications Section */}
         <div className="text-center">
-            <h3 className="text-3xl font-extrabold text-slate-900 mb-6">Certifications</h3>
-            <img src="https://picsum.photos/seed/certs/1200/500" alt="Certifications" className="w-full h-auto rounded-lg shadow-lg object-cover" />
+            <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Certifications</h3>
+            <img src="https://kumaromkar.in/wp-content/uploads/2025/06/certification_red-1024x575.png" alt="Certifications" className="w-full h-auto rounded-lg object-cover" />
         </div>
 
 

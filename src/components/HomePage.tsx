@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,13 +10,13 @@ interface ExploreCardProps {
 }
 
 const ExploreCard: React.FC<ExploreCardProps> = ({ imageSrc, title, text, buttonText, linkTo }) => (
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+  <div className="flex flex-col text-center">
     <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
     <div className="p-6 flex flex-col flex-grow">
-      <h3 className="text-xl font-bold text-slate-800 mb-2">{title}</h3>
-      <p className="text-slate-600 flex-grow">{text}</p>
+      <h3 className="text-xl font-bold text-theme-secondary font-heading mb-2">{title}</h3>
+      <p className="text-theme-text-main flex-grow">{text}</p>
       <div className="mt-6">
-        <Link to={linkTo} className="inline-block bg-sky-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-sky-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+        <Link to={linkTo} className="inline-block bg-theme-primary text-white font-semibold px-6 py-2 rounded-lg hover:bg-theme-primary-hover transition-colors duration-300 shadow-md hover:shadow-lg">
           {buttonText}
         </Link>
       </div>
@@ -29,14 +28,14 @@ const HomePage: React.FC = () => {
   return (
     <div className="animate-fadeIn">
       {/* Section 1: Intro */}
-      <section className="bg-white">
+      <section>
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-extrabold text-theme-secondary font-heading sm:text-5xl md:text-6xl">
                 Kumar Omkar
               </h1>
-              <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto md:mx-0">
+              <p className="mt-6 text-lg text-theme-text-main max-w-xl mx-auto md:mx-0">
                 Hey there! I’m Omkar—a builder at heart and a problem-solver by profession. Over the past 8 years, I’ve worked across industries from aerospace to EdTech to SaaS, and now I’m helping shape platform safety and data systems at LinkedIn. I love turning complex challenges into clear, actionable programs, and I’m always up for a good brainstorming session. When I’m not working, you will find me learning new stuff, reading about tech and finance.
               </p>
             </div>
@@ -52,9 +51,9 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Section 2: Explore More */}
-      <section className="bg-slate-50">
+      <section>
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-center text-slate-900 mb-12">
+          <h2 className="text-3xl font-extrabold text-center text-theme-secondary font-heading mb-12">
             Explore More About Me
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -84,7 +83,7 @@ const HomePage: React.FC = () => {
               title="Looking for guidance and mentorship?"
               text="Book a session with me for personalized advice and mentorship."
               buttonText="Appointment"
-              linkTo="/contact"
+              linkTo="/appointment"
             />
           </div>
         </div>

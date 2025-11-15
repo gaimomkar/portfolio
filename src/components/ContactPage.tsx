@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Inline SVG components for icons used on this page
 const PhoneIcon = () => (
@@ -34,7 +35,7 @@ const ContactPage: React.FC = () => {
     try {
       // IMPORTANT: Replace this URL with your actual Formspree form endpoint.
       // Go to https://formspree.io/ to create a form and get your endpoint.
-      const response = await fetch('https://formspree.io/f/xgegqjqb', {
+      const response = await fetch('https://formspree.io/f/xgvryvbn', {
         method: 'POST',
         body: data,
         headers: {
@@ -57,38 +58,38 @@ const ContactPage: React.FC = () => {
   };
 
 
-  const inputClasses = "block w-full px-4 py-3 rounded-md bg-slate-100 border-2 border-transparent focus:border-sky-500 focus:bg-white focus:ring-0 transition-all duration-300 placeholder-slate-400";
-  const buttonClasses = "w-full bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 disabled:bg-slate-400 disabled:cursor-not-allowed";
+  const inputClasses = "block w-full px-4 py-3 rounded-md bg-theme-bg-subtle border-2 border-transparent focus:border-theme-primary focus:bg-white focus:ring-0 transition-all duration-300 placeholder-slate-400";
+  const buttonClasses = "w-full bg-theme-primary text-white font-semibold px-6 py-3 rounded-lg hover:bg-theme-primary-hover transition-colors duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-theme-primary disabled:bg-slate-400 disabled:cursor-not-allowed";
   
   return (
-    <div className="bg-slate-50 min-h-full animate-fadeIn">
+    <div className="bg-theme-bg-main min-h-full animate-fadeIn">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
 
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold text-theme-secondary font-heading sm:text-5xl">
             Contact
           </h1>
-          <p className="mt-4 text-xl text-slate-600">
+          <p className="mt-4 text-xl text-theme-text-main">
             Let's Get In Touch
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-16 max-w-4xl mx-auto text-center border border-slate-200">
-          <h2 className="text-2xl font-bold text-slate-800 mb-3">Want to book an appointment?</h2>
-          <p className="text-slate-600 mb-6 max-w-2xl mx-auto">Book a session with me for personalized advice and mentorship.</p>
+        <div className="bg-theme-bg-white rounded-xl shadow-lg p-8 mb-16 max-w-4xl mx-auto text-center border border-theme-border">
+          <h2 className="text-2xl font-bold text-theme-secondary font-heading mb-3">Want to book an appointment?</h2>
+          <p className="text-theme-text-main mb-6 max-w-2xl mx-auto">Book a session with me for personalized advice and mentorship.</p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="#/contact" className="inline-block w-full sm:w-auto bg-slate-100 text-slate-800 font-semibold px-8 py-3 rounded-lg hover:bg-slate-200 transition-colors duration-300">
+            <Link to="/appointment" className="inline-block w-full sm:w-auto bg-theme-bg-subtle text-theme-secondary font-semibold px-8 py-3 rounded-lg hover:bg-slate-200 transition-colors duration-300">
               Services
-            </a>
-            <a href="#/contact" className="inline-block w-full sm:w-auto bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+            </Link>
+            <Link to="/booking" className="inline-block w-full sm:w-auto bg-theme-primary text-white font-semibold px-8 py-3 rounded-lg hover:bg-theme-primary-hover transition-colors duration-300 shadow-md hover:shadow-lg">
               Pick a Time
-            </a>
+            </Link>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-12 gap-y-16 bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-6xl mx-auto mb-16 border border-slate-200">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-12 gap-y-16 bg-theme-bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-6xl mx-auto mb-16 border border-theme-border">
           <div className="lg:col-span-3">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Send Me a Message</h3>
+            <h3 className="text-2xl font-bold text-theme-secondary font-heading mb-6">Send Me a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="sr-only">Name</label>
@@ -117,8 +118,8 @@ const ContactPage: React.FC = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Message Me</h3>
-            <div className="text-slate-600 leading-relaxed space-y-4">
+            <h3 className="text-2xl font-bold text-theme-secondary font-heading mb-6">Message Me</h3>
+            <div className="text-theme-text-main leading-relaxed space-y-4">
                 <p>Have a question, feedback, or just want to get in touch? I’d love to hear from you.</p>
                 <p>Whether you’re looking for more information, potential collaboration, or just want to say hello — feel free to reach out using the form. I’ll get back to you as soon as possible.</p>
             </div>
@@ -126,34 +127,34 @@ const ContactPage: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-slate-200">
+          <div className="bg-theme-bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-theme-border">
             <div className="flex justify-center mb-4">
-              <div className="bg-sky-100 text-sky-600 p-4 rounded-full">
+              <div className="bg-red-100 text-theme-primary p-4 rounded-full">
                 <PhoneIcon />
               </div>
             </div>
-            <h4 className="text-xl font-bold text-slate-800">+91 8608384567</h4>
-            <p className="text-slate-500 mt-1">Mon-Fri 7am - 5pm</p>
+            <h4 className="text-xl font-bold text-theme-secondary font-heading">+91 8608384567</h4>
+            <p className="text-theme-text-light mt-1">Mon-Fri 7am - 5pm</p>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-slate-200">
+          <div className="bg-theme-bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-theme-border">
             <div className="flex justify-center mb-4">
-              <div className="bg-sky-100 text-sky-600 p-4 rounded-full">
+              <div className="bg-red-100 text-theme-primary p-4 rounded-full">
                 <LocationIcon />
               </div>
             </div>
-            <h4 className="text-xl font-bold text-slate-800">Bengaluru, India</h4>
-            <p className="text-slate-500 mt-1">560087</p>
+            <h4 className="text-xl font-bold text-theme-secondary font-heading">Bengaluru, India</h4>
+            <p className="text-theme-text-light mt-1">560087</p>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-slate-200">
+          <div className="bg-theme-bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 border border-theme-border">
             <div className="flex justify-center mb-4">
-                <div className="bg-sky-100 text-sky-600 p-4 rounded-full">
+                <div className="bg-red-100 text-theme-primary p-4 rounded-full">
                     <EmailIcon />
                 </div>
             </div>
-            <h4 className="text-xl font-bold text-slate-800">omkarbd01@gmail.com</h4>
-            <p className="text-slate-500 mt-1">Contact me every time!</p>
+            <h4 className="text-xl font-bold text-theme-secondary font-heading">omkarbd01@gmail.com</h4>
+            <p className="text-theme-text-light mt-1">Contact me every time!</p>
           </div>
         </div>
       </div>

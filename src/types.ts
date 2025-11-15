@@ -1,4 +1,3 @@
-
 export enum BlogCategory {
   Tech = 'Tech',
   Business = 'Business',
