@@ -101,7 +101,7 @@ const AboutPage: React.FC = () => {
         {/* Work Experience Section */}
         <div className="text-center mb-16">
             <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Work Experience</h3>
-            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219587/WorkExp_Timeline_Red_pvkwwj.png://kumaromkar.in/wp-content/uploads/2025/07/WorkExp_Timeline_Red-1024x599.png" alt="Work Experience Timeline" className="w-full h-auto rounded-lg object-cover" />
+            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219587/WorkExp_Timeline_Red_pvkwwj.png" alt="Work Experience Timeline" className="w-[85%] mx-auto h-auto object-cover" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
@@ -136,10 +136,8 @@ const AboutPage: React.FC = () => {
         {/* Certifications Section */}
         <div className="text-center">
             <h3 className="text-3xl font-extrabold text-theme-secondary font-heading mb-6">Certifications</h3>
-            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/certification_red_t042yv.png" alt="Certifications" className="w-full h-auto rounded-lg object-cover" />
+            <img src="https://res.cloudinary.com/dk0uj1jry/image/upload/v1763219578/certification_red_t042yv.png" alt="Certifications" className="w-[80%] mx-auto h-auto object-cover" />
         </div>
-
-
       </div>
     </div>
   );

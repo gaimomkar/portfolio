@@ -11,7 +11,7 @@ interface ExploreCardProps {
 
 const ExploreCard: React.FC<ExploreCardProps> = ({ imageSrc, title, text, buttonText, linkTo }) => (
   <div className="flex flex-col text-center">
-    <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
+    <img src={imageSrc} alt={title} className="w-full h-60" />
     <div className="p-6 flex flex-col flex-grow">
       <h3 className="text-xl font-bold text-theme-secondary font-heading mb-2">{title}</h3>
       <p className="text-theme-text-main flex-grow">{text}</p>
